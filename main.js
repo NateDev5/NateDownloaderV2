@@ -3,7 +3,6 @@ const path = require('node:path')
 const youtubedl = require('youtube-dl-exec')
 const https = require('https')
 const fs = require('fs')
-const ProgressBar = require('electron-progressbar');
 const byteSize = require('byte-size')
 
 let mainWin;
