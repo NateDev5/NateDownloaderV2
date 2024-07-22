@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>ND v2</title>
+    <link href="./public/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="user-select: none;">
+    <div class="d-flex align-items-center justify-content-center">
+        <div id="download_container" class="p-5">
+            <form class="d-flex flex-column justify-content-center align-items-center" id="downloadform">
+                <h1>NateDownloader V2</h1>
+                <div class="mb-3">
+                    <input class="form-control" type="url" placeholder="Enter youtube url..." id="yt_url" autofocus
+                        required>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary" value="Download">
+                </div>
+            </form>
+        </div>
+        <div id="downloading_container" class="p-5 d-none">
+            <h1>Downloading</h1>
+            <div class="progress" role="progressbar" aria-label="Success example" id="progress_bar">
+                <div class="progress-bar bg-success" style="width: 0%" id="progress_bar_progress"></div>
+            </div>
+            <span id="progress_text">Loading...</span>
+        </div>
+    </div>
+    <script src="./public/bootstrap.bundle.min.js"></script>
+    <script src="./renderer.js"></script>
+</body>
+
+</html>

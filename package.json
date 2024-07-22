@@ -1,0 +1,22 @@
+{
+  "name": "natedownloaderv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ NDv2 --platform=win32 --arch=x64 --overwrite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.2.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "byte-size": "^9.0.0",
+    "electron-progressbar": "^2.2.1",
+    "fs": "^0.0.1-security",
+    "youtube-dl-exec": "^3.0.7"
+  }
+}
